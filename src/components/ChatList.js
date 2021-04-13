@@ -148,7 +148,7 @@ export const MobileChatList = ({ onClose, groups, user, currentGroupId }) => {
 }
 
 const MobileChatLink = ({ group, onClick }) => {
-  const { match } = useRouteMatch('/groups/:groupId')
+  const match = useRouteMatch('/groups/:groupId')
   const isCurrent = match && match.params.groupId === group.id
 
   return (
